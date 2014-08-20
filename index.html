@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html ng-app="progit">
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pro Git</title>
+    <link rel="shortcut icon" type="images/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/octicons/octicons/octicons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/vendors/ngprogress/ngProgress.css"/>
 </head>
 <body>
+    <a href="#main" class="sr-only">SKIP TO CONTENT</a>
+    <div id="header" class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a id="brand" href="/progit/">
+                    <img src="assets/img/git-logo.png" alt="git" class="logo">
+                </a>
+                <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse navigation">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <span class="octicon octicon-list-unordered"></span> 目录
+                            <b class="caret"></b>
+                        </a>
+                        <!-- Dropdown: contents -->
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" bs-dropdown="navigation.languages">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <span class="octicon octicon-globe"></span> 其他语言
+                            <b class="caret"></b>
+                        </a>
+                        <!-- Dropdown: languages -->
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span class="octicon octicon-question"></span> 关于
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main container">
+        <div class="row wrap">
+            <div class="col-md-4">
+                <div class="ph20"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="ph20"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="pull-left"></div>
+            <div class="pull-right"></div>
+        </div>
+    </div>
+
     <script src="assets/vendors/angular/angular.min.js"></script>
     <script src="assets/vendors/angular-animate/angular-animate.min.js"></script>
     <script src="assets/vendors/angular-strap/dist/angular-strap.min.js"></script>
     <script src="assets/vendors/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="assets/vendors/ngprogress/build/ngProgress.min.js"></script>
-    <script>
-        angular.module('progit', ['ngAnimate', 'mgcrea.ngStrap', 'ngProgress']);
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

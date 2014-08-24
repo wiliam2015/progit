@@ -2,3 +2,5 @@
 node_modules/
 npm-debug.log
 assets/vendors/
+html/**/*.html
+!html/about.html

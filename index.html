@@ -15,7 +15,7 @@
     <div id="header" class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a id="brand" href="/progit/">
+                <a id="brand" href="#!/">
                     <img src="assets/img/git-logo.png" alt="git" class="logo">
                 </a>
                 <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle">
@@ -45,7 +45,7 @@
                         <!-- Dropdown: languages -->
                     </li>
                     <li>
-                        <a href="#about">
+                        <a href="#!/about">
                             <span class="octicon octicon-question"></span> 关于
                         </a>
                     </li>
@@ -55,14 +55,7 @@
     </div>
 
     <div class="main container">
-        <div class="row wrap">
-            <div class="col-md-4">
-                <div class="ph20"></div>
-            </div>
-            <div class="col-md-8">
-                <div class="ph20"></div>
-            </div>
-        </div>
+        <div class="row wrap" ng-view></div>
 
         <div class="footer">
             <div class="pull-left"></div>
@@ -70,10 +63,12 @@
         </div>
     </div>
 
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/vendors/angular/angular.min.js"></script>
+    <script src="assets/vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/vendors/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="assets/vendors/angular-animate/angular-animate.min.js"></script>
-    <script src="assets/vendors/angular-strap/dist/angular-strap.min.js"></script>
-    <script src="assets/vendors/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="assets/vendors/ngprogress/build/ngProgress.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
